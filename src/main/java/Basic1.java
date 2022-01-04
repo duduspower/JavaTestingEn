@@ -3,6 +3,5 @@ public class Basic1 {
     {
         System.out.println("Hello");
         System.out.println("Dominik Duda");
-
     }
 }
