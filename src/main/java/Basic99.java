@@ -1,0 +1,2 @@
+public class Basic99 {
+}
