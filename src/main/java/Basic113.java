@@ -10,18 +10,18 @@ public class Basic113 {
             System.out.println("Ilość podanych liczb w arrayu musi być równa");
         }
 
-        for(int i = 0; i < array3.length - 1; i++){
-            if(i < 1) {
-                array3[i] = array1[i];
-                array3[i + 1] = array2[i];
-            }
-            else{
-                array3[i] = array1[i / 2];
-                array3[i + 1] = array2[i / 2];
-            }
+        for(int i = 0; i < array1.length; i++){
+            array3[i] = array1[i];
+        }
+        for(int j = 0; j < array2.length; j++)
+        {
+            array3[j + array1.length] = array2[j];
         }
         System.out.println("Array 1 : " + Arrays.toString(array1));
         System.out.println("Array 2 : " + Arrays.toString(array2));
-        System.out.println("Array 3 : " + Arrays.toString(array3));
+        System.out.println("Array 3 before sorting: " + Arrays.toString(array3));
+        Arrays.sort(array3);
+        System.out.println("Array 3 after sorting: " + Arrays.toString(array3));
+
     }
 }
