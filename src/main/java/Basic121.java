@@ -9,6 +9,10 @@ public class Basic121 {
         link.add(40);
         link.add(60);
         link.add(80);
+        link.add(0);
+        link.add(0);
+        link.add(0);
+        link.add(0);
 
         int temp = 0;
 
@@ -16,10 +20,9 @@ public class Basic121 {
         System.out.print("\n" + link.toString());
 
         for(int i = 0; i < link.size(); i++) {
-            temp = link.get(i);
-            link.remove(i);
-            System.out.println(temp);
+            link.set(link.size() + 4 - i, link.get(i));
         }
         System.out.print("\n" + link.toString());
     }
 }
+// do dokończenia
