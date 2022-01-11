@@ -19,6 +19,7 @@ public class Basic113 {
         }
         System.out.println("Array 1 : " + Arrays.toString(array1));
         System.out.println("Array 2 : " + Arrays.toString(array2));
+
         System.out.println("Array 3 before sorting: " + Arrays.toString(array3));
         Arrays.sort(array3);
         System.out.println("Array 3 after sorting: " + Arrays.toString(array3));
